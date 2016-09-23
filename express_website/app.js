@@ -33,13 +33,13 @@ app.post('/contact/send', function(req, res){
 		service: 'Gmail',
 		auth: {
 			user: 'phantom42@gmail.com',
-			password: // enter password
+			pass: //password
 		}
 	});
 
 	var mailOptions = {
 		from: 'Joe <phantom42@gmail.com>',
-		to: 'jcoleman@phantom42.com',
+		to: 'phantom42@gmail.com',
 		subject: 'website submission',
 		text: 'you have a submission with the following details... Name: ' +req.body.name+ ' Email: ' + req.body.email + ' Message: ' + req.body.message,
 		html: '<p>you have a submision wiht the following details...</p><ul><li>' + req.body.name + '</li><li>' + req.body.email + '</li><li>' + req.body.message + '</li></ul>'
