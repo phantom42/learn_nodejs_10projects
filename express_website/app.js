@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
 	// console.log('hello world'); 
 	// res.send('<h1>Hello world</h1>');
-	res.render('index', {title: 'Welcome'});
+	res.render('index', {title: 'Computer Not Working?'});
 })
 
 app.get('/about', function(req, res){
