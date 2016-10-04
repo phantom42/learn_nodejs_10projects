@@ -26,3 +26,6 @@ block content
 			select.form-control(name='author')
 				option(value='Joe Coleman') Joe Coleman
 		input.btn.btn-default(name='submit',type='submit',value='Save')
+		script(src='/ckeditor/ckeditor.js')
+		script
+			| CKEDITOR.replace('body');
